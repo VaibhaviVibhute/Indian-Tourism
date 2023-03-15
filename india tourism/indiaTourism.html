@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 6-India Tourism</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* background-color: palegreen; */
+        background-color: rgb(99, 216,152);
+    }
+
+    #main {
+        height: 4000px;
+        width: 800px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+       
+    }
+
+    /* header */
+    #head {
+        height: 60px;
+        width: 800px;
+        /* border: 1px solid black; */
+    }
+
+    #title {
+        height: 60px;
+        width: 300px;
+        /* border: 1px solid black; */
+        display: flex;
+        text-decoration: underline;
+        letter-spacing: 4px;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+
+    #I {
+        padding-top: 10px;
+        color: red;
+        font-size: 33px;
+    }
+
+    #T {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    #nav {
+        height: 60px;
+        width: 800px;
+        /* border: 1px solid black; */
+        margin-top: 3px;
+    }
+
+    #nm3 {
+        height: 60px;
+        width: 340px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        margin-left: 460px;
+    }
+
+    .nm {
+        height: 40px;
+        width: 80px;
+        /* border: 1px solid black; */
+        color: black;
+        padding: 5px 5px;
+        margin-top: 10px;
+        font-weight: 550;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    /* body */
+    .cont {
+        height: 400px;
+        width: 800px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        margin-top: 25px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #cont1{
+        margin-top: 15px; 
+        background-image: linear-gradient(to right,rgba(145, 145, 243, 0.6), rgba(68, 157,240,0.4));
+        overflow-y: hidden;
+    }
+    #cont2{
+        background-image: linear-gradient(to right,rgba(248, 193, 105, 0.9),rgba(248, 193, 105, 0.4), rgba(245, 150, 109, 0.8),rgba(239,126,77,0.9));
+        overflow-y: hidden;
+    }
+    #cont3{
+        background-image: linear-gradient(to right,rgba(241, 175, 118, 0.5),rgba(233, 175, 124, 0.2),rgba(44, 167,163,0.872));
+        overflow-y: hidden;
+    }
+    #cont4{
+        background-image: linear-gradient(to right,rgba(225, 160, 75, 0.8),rgba(224, 126, 84, 0.7),rgba(128,66,40,0.9));
+    }
+    #cont5{
+        background-image: linear-gradient(to right,rgba(130, 75, 226, 0.8),rgba(138, 115, 171, 0.5),rgba(193, 159, 109, 0.8));
+    }
+    #cont6{
+        background-image: linear-gradient(to right,rgba(8, 207, 87, 0.2),rgba(62, 159, 101, 0.5),rgba(193, 159, 109, 0.8));
+    }
+    #cont7{
+        background-image: linear-gradient(to right,rgba(228, 105, 201),rgba(248, 128, 230),rgba(224, 207, 182, 0.9));
+    }
+    #cont8{
+        background-image: linear-gradient(to right,rgb(92, 181, 237),rgb(135, 206, 250),rgba(224, 207, 182, 0.9));
+    }
+    #cont9{
+        background-image: linear-gradient(to right, rgba(255, 187, 61, 0.911), rgb(207, 176, 120),rgba(224, 207, 182, 0.9));
+    }
+    .t1 {
+        height: 40px;
+        width: 800px;
+        /* border: 1px solid black; */
+        font-size: 20px;
+        padding: 4px 8px;
+        font-weight: 600;
+    }
+
+    #imgInfo {
+        height: 360px;
+        width: 800px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img {
+        height: 330px;
+        width: 300px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        margin-top: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .info {
+        height: 500px;
+        width: 300px;
+        /* border: 1px solid black; */
+        margin-top: 12px;
+        width: 450px;
+    }
+
+    #img1 {
+        background-image: url(./varanasi\ ghat.jpg);
+    }
+
+    #img2 {
+        background-image: url(./jaisalmer.jpg);
+    }
+
+    #img3 {
+        background-image: url(./gateway-of-india-ga62126655_640.jpg);
+    }
+
+    #img4 {
+        background-image: url(./india-top-attractions-goa-beaches.jpg);
+        background-position: left;
+    }
+
+    /* #info4 {
+        overflow-y: scroll;
+    } */
+
+    #img5 {
+        background-image: url(./ellora\ caves.jpg);
+    }
+
+    #img6 {
+        background-image: url(./india-top-attractions-mehrangarh-fort.jpg);
+    }
+
+    #img7 {
+        background-image: url(./india-top-attractions-the-ganges-river-varanasi.jpg);
+        background-position: left;
+    }
+
+    #img8 {
+        background-image: url(./india-top-attractions-mysore-palace.jpg);
+    }
+
+    #img9 {
+        background-image: url(./india-top-attractions-mahabodhi-temple.jpg);
+    }
+
+    /* footer */
+  #foot{
+    height: 60px;
+    width: 800px;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+  #line{
+    height: 20px;
+    width: 700px;
+    /* border: 1px solid black; */
+    position: absolute;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    z-index: -1;
+  }
+  #title2{
+    height: 60px;
+    width: 250px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-left: 200px;
+  }
+  #i{
+    height: 60px;
+    width: 30px;
+    /* border: 1px solid black; */
+    font-weight: 500;
+    color: red;
+    font-size: 50px;
+  }
+  #t{
+    height: 30px;
+    width: 180px;
+    /* border: 1px solid black; */
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  #pvt{
+    height: 20px;
+    width: 200px;
+    /* border: 1px solid black; */
+    /* margin-left: px; */
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+</style>
+
+<body>
+    <div id="main">
+        <!-- header -->
+        <div id="head">
+            <div id="title">
+                <div id="I">I</div>
+                <div id="T">ndiaTourism</div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <div id="nav">
+            <div id="nm3">
+                <a href="#" class="nm">
+                    <div>HOME</div>
+                </a>
+                <a href="#" class="nm">
+                    <div>TRAVEL</div>
+                </a>
+                <a href="#" class="nm">
+                    <div>TRAVEL</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="cont" id="cont1">
+            <div class="t1">The Holy city of Varanasi</div>
+            <div id="imgInfo">
+                <div id="img1" class="img"></div>
+                <div class="info" id="info1">Ghats in Varanasi are riverfront steps leading to the banks of the Ganges
+                    river. The city has 84 ghats. Most of the ghats are bathing and puja ceremonial ghats, while two
+                    ghats, Manikarnika and Harishchandra, are used exclusively as cremation sites.<br><br>
+                    Most of the ghats in Varanasi were rebuilt in the 18th century under the maratha patronage. The
+                    patrons of current ghats are Marathas, Shindes (Scindias), Holkars, Bhonsles, Peshwes (Peshwas), and
+                    Maharajas of Benares. Many ghats are associated with legends or mythologies while other ghats have
+                    private histories and users. A morning boat ride on the Ganges along the ghats is a popular visitor
+                    attraction. <br><br>
+                    Ghat, a term used in the Indian subcontinent, depending on the context could either refer to a range
+                    of stepped-hill such as Eastern Ghats and Western Ghats; or the series of steps leading down to a
+                    body of water or wharf, such bathing or cremation place along the banks of a river or pond.
+                </div>
+            </div>
+        </div>
+        <div class="cont" id="cont2">
+            <div class="t1">The Golden City: Jaisalmer</div>
+            <div id="imgInfo">
+                <div id="img2" class="img"></div>
+                <div class="info" id="info2">Jaisalmer pronunciation, nicknamed "The Golden city", is a city
+                    in the Indian state of Rajasthan, located 575 kilometres (357 mi) west of the state capital Jaipur.
+                    The town stands on a ridge of yellowish sandstone and is crowned by the ancient Jaisalmer Fort. This
+                    fort contains a royal palace and several ornate Jain temples. Many of the houses and temples of both
+                    the fort and of the town below are built of finely sculptured sandstone. The town lies in the heart
+                    of the Thar Desert (the Great Indian Desert) and has a population, including the residents of the
+                    fort, of about 78,000. It is the administrative headquarters of Jaisalmer District. Jaisalmer was
+                    once the capital of Jaisalmer State.<br><br>
+                    Jaisalmer was founded by Rawal Jaisal in 1156 AD.Jaisalmer means the Hill Fort of Jaisal.
+                    Jaisalmer is sometimes called the "Golden City of India" because of the yellow sandstone used
+                    throughout the architecture of both the fort and the town below, imbues both with a certain
+                    golden-yellow light.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont3">
+            <div class="t1">Mumbai: The Gateway of India</div>
+            <div id="imgInfo">
+                <div id="img3" class="img"></div>
+                <div class="info" id="info3">The Gateway of India is an arch-monument built in the early 20th century in
+                    the city of Mumbai (Bombay), India. It was erected to commemorate the landing of King-Emperor George
+                    V, the first British monarch to visit India, in December 1911 at Strand Road near Wellington
+                    Fountain.<br><br>
+                    The foundation stone was laid in March 1913 for a monument built in the Indo-Islamic style, inspired
+                    by elements of 16th-century Gujarati architecture. The final design of the monument by architect
+                    George Wittet was sanctioned only in 1914, and construction was completed in 1924. The structure is
+                    a memorial arch made of basalt, which is 26 metres (85 feet) high, with an architectural resemblance
+                    to a triumphial arch as well as Gujarati architecture of the time. <br><br>
+                    After its construction, the Gateway was used as a symbolic ceremonial entrance to India for
+                    important colonial personnel. The Gateway is also the monument from where the last British troops
+                    left India in 1948, following Indian independence.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont4">
+            <div class="t1">The Beaches of goa</div>
+            <div id="imgInfo">
+                <div id="img4" class="img"></div>
+                <div class="info" id="info4">Long known within India as the "go-to" destination for those seeking a
+                    great beach holiday, Goa's beautiful western coastline, overlooking the Arabian Sea, has only
+                    recently been discovered by tourists from overseas. Goa's more than 60 miles of coastline is home to
+                    some of the world's loveliest beaches, each with their own particular appeal. <br><br>
+                    For those looking for peace and quiet, isolated Agonda Beach is a good choice, while Calangute Beach
+                    is by far the most commercial and crowded. For those in search of posh resorts, yoga getaways, and
+                    spa vacations, the beaches of Mandrem, Morjim, and Ashwem are fashionable among wealthy Indians and
+                    Westerners alike. Palolem is another one of Goa's popular beaches in a beautiful setting.<br><br>
+
+                    While in Goa, be sure to visit the Bhagwan Mahavir Wildlife Sanctuary. This superb attraction is
+                    home to thick forests and plenty of fauna, including deer, monkeys, elephants, leopards, tigers, and
+                    black panthers, as well as India's famous king cobras, and some 200 species of birds.<br><br>
+
+                    Also worth a visit is Divar Island, accessed by ferry from Old Goa. Highlights include Piedade, a
+                    typical Goan village and home to the Church of Our Lady of Compassion with its interesting stucco
+                    work, Baroque plaster decorations, and altars, as well as stunning views of the surrounding
+                    countryside.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont5">
+            <div class="t1">The Ellora caves, Aurangabad</div>
+            <div id="imgInfo">
+                <div id="img5" class="img"></div>
+                <div class="info" id="info4">
+                    The famous monumental Ellora Caves were built between the 5th and 10th centuries by Buddhist, Jain,
+                    and Hindu monks, and make for an excellent excursion from Mumbai, some 300 kilometers to the west.
+                    <br><br>
+                    Now a UNESCO World Heritage Site, this remarkable collection of 34 carved monasteries, chapels, and
+                    temples-12 of them Buddhist, 17 Hindu, and five belonging to the Jain faith – were built in close
+                    proximity to each other, a reflection of the religious tolerance that existed during this period of
+                    Indian history.
+                    <br><br>
+                    Of the Buddhist monastery caves, highlights include a number of shrines featuring carvings of Buddha
+                    and saints dating from the 5th to 7th centuries, as well as the stunning Carpenter's Cave,
+                    considered one of the finest in India.
+                    <br><br>
+                    The Hindu caves are much more complex and were carved from the top down, so scaffolding was not
+                    necessary. Of these, the best is the Kailasa Temple, an enormous rock-cut temple representing Mount
+                    Kailasa and requiring the removal of 200,000 tons of rock.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont6">
+            <div class="t1">Mehrangarh Fort, Jodhpur</div>
+            <div id="imgInfo">
+                <div id="img6" class="img"></div>
+                <div class="info" id="info4">
+                    Dominating the old city of Jodhpur, the massive Mehrangarh Fort, one of the largest fortifications
+                    in India, was built in the 15th century to safeguard the people of the famous "Blue City." Jodhpur
+                    is still known by this name, which is derived from its indigo-colored houses, painted blue to
+                    deflect the heat.
+                    <br><br>
+                    Built on top of a towering outcrop, Mehrangarh is an amazing feat of construction, its massive walls
+                    all but impenetrable. Access is via one of seven splendid gates, including Jaya Pol and Fateh Pol
+                    (the latter still bears scars from cannon attacks).
+                    <br><br>
+                    Highlights of a visit include exploring the fort's fascinating network of courtyards and palaces, as
+                    well as a museum housing a splendid collection of artifacts related to the Maharajas. Be sure to
+                    spend time in the historic center of Jodhpur itself, famous for its eight city gates, a lovely old
+                    clock tower, and numerous bazaars selling everything from vegetables to sweets, spices, and
+                    handicrafts.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont7">
+            <div class="t1">The Ganges River</div>
+            <div id="imgInfo">
+                <div id="img7" class="img"></div>
+                <div class="info" id="info4">
+                    The Ganges River, or "Ganga" after the Hindu goddess, has long been one of India's most revered
+                    natural wonders. It's also one of the country's leading attractions, drawing crowds of Indian
+                    nationals to partake in its religious ceremonies, as well as tourists to enjoy the splendor of this
+                    mighty river.
+                    <br><br>
+                    While there are a number of cities dotted along the river, it's to the city of Varanasi that most
+                    tourists will travel to experience the Ganges and the cultural attractions that have sprung up along
+                    its banks. Although relatively small by Indian standards-its population is around 1.2 million
+                    people - the city is chock-full of temples and other important religious sites, many of them focused
+                    on worship of (or on) the Ganges.
+                    <br><br>
+                    Numerous "ghats" are set along the river banks, making it easy for worshippers and tourists alike to
+                    get up close. Made up of sometimes steep steps leading directly into the water, there are in fact 88
+                    of these entry points to the Ganges. While most are many centuries old, they were extensively
+                    reconstructed and improved in the 1700s, and with their often vibrant, colorful ceremonies and
+                    celebrations are some of the most beautiful places to photograph in India.
+                    <br><br>
+                    If you've time, opt for one of the Ganges river tours available in the city from any one of the
+                    ghats. The most memorable are the early morning sunrise cruises. Top the experience by purchasing
+                    one of the small, floating offerings available from a vendor and set it off down the river
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont8">
+            <div class="t1">Mysore Palace</div>
+            <div id="imgInfo">
+                <div id="img8" class="img"></div>
+                <div class="info" id="info4">
+                    The sprawling city of Mysore is a delight to explore thanks to its eclectic mix of fine old colonial
+                    architecture; regal Indian palaces; and lush, well-manicured gardens. While those inclined towards
+                    shopping will enjoy spending time in the city's famous silk and sandalwood bazaars, the main
+                    attraction is magnificent Mysore Palace.
+                    <br><br>
+                    Completely rebuilt in 1897 after a devastating fire, this beautiful three-storied palace features
+                    highlights such as its elegant square towers and domes; the many ornate ceilings and pillars in
+                    Durbar Hall; and the splendid Marriage Pavilion, with its glazed floor tiles, stunning stained
+                    glass, artworks, and displays of jewelry. It's also where, on special occasions, the exquisite
+                    Golden Throne is exhibited.
+                    <br><br>
+                    For a real treat, be sure to catch one of the splendid light displays held each Sunday and during
+                    holidays, when the palace is illuminated by more than 90,000 lights. A fun way to explore the
+                    palace's massive grounds and gardens is as part of a cycle tour, available free once inside.
+                </div>
+            </div>
+        </div>
+
+        <div class="cont" id="cont9">
+            <div class="t1">Mahabodhi Temple, Bodhgaya</div>
+            <div id="imgInfo">
+                <div id="img9" class="img"></div>
+                <div class="info" id="info4">
+                    Bodhgaya, considered the world's holiest Buddhist site, attracts thousands of visitors each year,
+                    all drawn to participate with the resident monks in meditation and prayer.
+                    <br><br>
+                    The focal point of this place of pilgrimage is stunning Mahabodhi Temple, built next to the very
+                    spot where Buddha came to Enlightenment and formulated his philosophy on life. Constructed in the
+                    6th century and restored numerous times since, the temple is topped with a beautiful pyramidal spire
+                    and houses a large gilded statue of Buddha.
+                    <br><br>
+                    Also of interest is the site's pipal tree, a descendant of the original bodhi tree where Buddha
+                    meditated for seven days after the Enlightenment, said to be among the oldest and most venerated
+                    trees in the world (you'll know you've found it when you spot the red sandstone slab marking the
+                    spot).
+                    <br><br>
+                    The Bodhi tree at Bodhgaya is directly connected to the life of the historical Buddha, Siddhartha
+                    Gautama, who attained enlightenment or omniscient wisdom when he was meditating under it. The temple
+                    was built directly to the east of the Bodhi tree, supposedly a direct descendant of the original
+                    Bodhi Tree.
+                    According to Buddhist mythology, if no Bodhi tree grows at the site, the ground around the Bodhi
+                    tree is devoid of all plants for a distance of one royal karīsa. Through the ground around the Bodhi
+                    tree no being, not even an elephant, can travel.
+                </div>
+            </div>
+        </div>
+       
+        <!-- footer -->
+        <div id="foot">
+            <div id="line">
+                <hr>
+            </div>
+            <div id="pvt">2022Indiatourism.com Pvt.Ltd</div>
+            <div id="title2">
+                <div id="i">I</div>
+                <div id="t">ndiaTourism</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
